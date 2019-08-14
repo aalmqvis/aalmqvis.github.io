@@ -1,0 +1,715 @@
+html, body {
+  /* height: 100%;
+  width: 100%;
+   */
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 11fr;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.header {
+  /* min-width: 100%;
+  min-height: 100%; */
+  padding-bottom: -25px;
+  /* background-image: url("../img/header.png"); */
+  background-color: #73E0DB;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer {
+  min-width: 100%;
+  min-height: 100%;
+  /* background-image: url("../img/footer.png"); */
+  background-color: #F1921E;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr 1fr 1fr;
+  /* padding-bottom: -15px; */
+}
+
+.main {
+
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/index_forest.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-image: url("../img/main.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* margin-left: -34px;
+  margin-top: -35px;
+  margin-bottom: -38px; */
+
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 7fr 1fr 2fr 1fr;
+}
+
+.tileContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.rectangle {
+  cursor: pointer;
+
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
+
+  display: block;
+  line-height: 20px;
+  width:580px;
+  height:42px;
+  overflow: hidden;
+}
+
+.rectangle {
+  transition: height 0.2s ease-out;
+  -webkit-transition: height 0.2s ease-out;
+  -moz-transition: height 0.2s ease-out;
+  -o-transition: height 0.2s ease-out;
+
+}
+
+.rectangle:hover {
+  height: 70px;
+  background: #aafabd;
+}
+
+#tileSites {
+  background: #97DDA7;
+}
+
+#tileButterflies {
+  background: #D6A3CA;
+}
+
+#tileLune {
+  background: #EF7929;
+}
+
+#tileLumo {
+  background: #A3A8D8;
+}
+
+#tileForce {
+  background: #EDBF6B;
+}
+
+.rectangle p {
+  line-height: 20px;
+
+  font-style: italic;
+  font-family: "VT323", monospace;
+  font-size: 15px;
+
+  float: left;
+  margin-left: 13px;
+  margin-top: 8px;
+
+}
+
+
+.projectTitle {
+  float: left;
+  margin-top: 12px;
+  margin-left: 13px;
+}
+
+.projectOutcome {
+  float: right;
+  margin-top: 12px;
+  margin-right: 13px;
+
+
+}
+
+.text p {
+  font-family: "VT323", monospace;
+  font-size: 15px;
+  text-align: left;
+  /* color: #19305E; */
+  color: 	#000000;
+
+ }
+
+.headerTexts p {
+  text-align: center;
+  margin: 20px;
+  padding-top: 11px;
+}
+
+.rectangle span {
+  font-family: "VT323", monospace;
+  /* color: #19305E; */
+  color: 	#000000;
+
+
+  font-size: 15px;
+  text-align: center;
+
+  vertical-align: middle;
+}
+
+
+
+.tileCanvas {
+  text-align: center;
+
+}
+
+
+a:link {
+  text-decoration: none;
+  /* color: #19305E; */
+  color: 	#000000;
+
+}
+a:visited {
+  text-decoration: none;
+  /* color: #19305E; */
+  color: 	#000000;
+
+
+}
+
+
+
+/* ######## Tile pages ######### */
+
+.tilePage {
+
+  /* min-width: 100%;
+  min-height: 100%; */
+  height: inherit;
+
+  background-image: url("../img/pages_forest.png");
+  background-repeat: repeat-y;
+
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-rows: 0fr 12fr;
+
+}
+
+/* .tilePageContent {
+  margin-top: 40px;
+  padding: 28px;
+
+  display: grid;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #19305E;
+  background-color: #F7F2E7;
+} */
+
+
+.keywords {
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  /* color: #19305E; */
+  color: 	#ededed;
+
+}
+
+
+
+
+/* #### Tilepage 1, Sites of Encounter #### */
+
+.tilePage1Content {
+  margin-top: 40px;
+  padding: 28px;
+  /* max-width: 72.85714285rem; */
+
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr; */
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: 	#000000;
+  background-color: #c1ffd4;
+
+  line-height: 1.846153846rem;
+}
+
+#hrTilePage1 {
+  display: block; height: 1px;
+    border: 0; border-top: 1px solid #abdeba;
+    margin: 1em 0; padding: 0;
+}
+
+.contentEntry {
+    margin-block-start: 3em;
+    margin-block-end: 4em;
+
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: -5px;
+  /* font-family: "VT323", monospace; */
+  font-family: 'Khand', sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'Khand', sans-serif;
+
+}
+
+h3 {
+  font-family: 'Khand', sans-serif;
+
+  margin-bottom: 7px;
+}
+
+em {
+  margin-bottom: -25px;
+
+}
+
+
+.tunnelContainer {
+
+}
+
+#tile1PageScream {
+  max-width: 1100px;
+}
+
+#tile1PageTunnel {
+  max-width: 1100px;
+}
+
+#tile1PageTree {
+  display: block;
+}
+
+#tile1PagePhone {
+  max-width: 1100px;
+}
+
+
+
+figure {
+  /* float: left; */
+  margin-left: 0;
+  margin-top: 4px;
+  margin-right: 20px;
+}
+
+#tile1PageProcessCollage {
+  max-width: 600px;
+  display: block;
+}
+
+#tile1PageSketch {
+  max-width: 600px;
+  display: block;
+
+}
+
+#tile1PageWorkshop {
+  max-width: 600px;
+  display: block;
+
+}
+
+
+
+
+
+/* #### Tilepage 2, Butterflies in the stomach #### */
+
+.tilePage2Content {
+  margin-top: 40px;
+  padding: 28px;
+  max-width: 1100px;
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr; */
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  /* color: #19305E; */
+  color: 	#000000;
+
+  background-color: #f5d4ef;
+
+  line-height: 1.846153846rem;
+}
+
+
+
+#hrTilePage2 {
+  display: block; height: 1px;
+    border: 0; border-top: 1px solid #d6bad1;
+    margin: 1em 0; padding: 0;
+}
+
+
+h1 {
+  margin-top: 0;
+}
+
+.tilepageImgLeft {
+  max-width: 40%;
+}
+
+.tilepageTextRight {
+  max-width: 40%;
+}
+
+#tile2PagePic1 {
+  max-width: 600px;
+}
+
+#tile2PagePic2 {
+  max-width: 600px;
+}
+
+#tile2PagePic3 {
+  max-width: 600px;
+}
+
+#tile2PagePic4 {
+  max-width: 600px;
+}
+
+#tile2PagePic5 {
+  max-width: 600px;
+}
+
+
+/* #### Tilepage 3, Lune: somaesthetic  #### */
+
+.tilePage3Content {
+  margin-top: 40px;
+  padding: 28px;
+
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr; */
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  /* color: #19305E; */
+  color: 	#000000;
+
+  background-color: #f39454;
+
+  line-height: 1.846153846rem;
+
+}
+
+#hrTilePage3 {
+  display: block; height: 1px;
+    border: 0; border-top: 1px solid #cc8653;
+    margin: 1em 0; padding: 0;
+}
+
+
+h1 {
+  margin-top: 0;
+}
+
+.tilepageImgLeft {
+  max-width: 40%;
+}
+
+.tilepageTextRight {
+  max-width: 40%;
+}
+
+#tile3PagePic1 {
+  max-width: 100%;
+}
+
+#tile3PagePic2 {
+  max-width: 520px;
+}
+
+#tile3PagePic6 {
+  max-width: 400px;
+}
+
+#tile3PagePic7 {
+  max-width: 520px;
+  float: left;
+}
+
+#tile3PageMove {
+  max-width: 400px;
+  /* float: left; */
+
+  /* margin-left: 20px; */
+
+}
+
+#tile3PagePush {
+
+  max-width: 400px;
+  /* margin-left: 40px; */
+}
+
+.soma_gifs {
+  display: block;
+
+  width: 100%;
+}
+
+#tile3PagePic8 {
+  max-width: 520px;
+}
+
+#tile3PagePicCollage {
+  max-width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#tile3PageMaterial {
+  max-width: 500px;
+  float: left;
+}
+
+
+#tile3PageMovement {
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+#tile3PageBleautop {
+  max-width: 800px;
+}
+
+#tile3PageMella {
+  max-width: 800px;
+}
+
+
+
+/* #### Tilepage 4, Lumobok, multimodal #### */
+
+.tilePage4Content {
+  margin-top: 40px;
+  padding: 28px;
+
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr; */
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  /* color: #19305E; */
+  color: 	#000000;
+
+  background-color: #b3b8ed;
+
+  line-height: 1.846153846rem;
+
+}
+
+
+#hrTilePage4 {
+  display: block; height: 1px;
+    border: 0; border-top: 1px solid #a7a9c7;
+    margin: 1em 0; padding: 0;
+}
+
+
+h1 {
+  margin-top: 0;
+}
+
+.tilepageImgLeft {
+  max-width: 40%;
+}
+
+.tilepageTextRight {
+  max-width: 40%;
+}
+
+#tile4PagePic1 {
+  max-width: 400px;
+}
+
+#tile4PagePic2 {
+  max-width: 520px;
+}
+
+#tile4PagePic4 {
+  max-width: 200px;
+}
+
+#tile4PagePic5 {
+  max-width: 200px;
+}
+
+#tile4PagePic6 {
+  max-width: 200px;
+}
+
+#tile4PagePic7 {
+  max-width: 200px;
+  float: left;
+}
+
+#tile4PagePic8 {
+  max-width: 200px;
+}
+
+#tile4PagePic9 {
+  max-width: 200px;
+}
+
+#tile4PageGifLeft {
+  max-width: 300px;
+}
+
+#tile4PageGifRight {
+  max-width: 300px;
+}
+
+
+
+
+/* #### CV content */
+
+.CVContent {
+  margin-top: 40px;
+  padding: 28px;
+
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr; */
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  /* color: #19305E; */
+  color: 	#000000;
+
+  background-color: #ea6c6c;
+
+  line-height: 1.846153846rem;
+
+}
+
+#hrTilePageCV {
+  display: block; height: 1px;
+    border: 0; border-top: 1px solid #b24646;
+    margin: 1em 0; padding: 0;
+}
+
+.h1CV {
+  margin-bottom: 9px;
+}
+
+.h2CV {
+  margin-top: 20px;
+}
+
+.h2CVPractice {
+  margin-top: 10px;
+}
+
+
+.CVRow {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+}
+
+
+/* #### About content */
+
+.AboutContent {
+  margin-top: 40px;
+  padding: 28px;
+
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr; */
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  /* color: #19305E; */
+  color: 	#000000;
+
+  background-color: #ea6c6c;
+
+  line-height: 1.846153846rem;
+
+}
+
+#hrTilePageAbout {
+  display: block; height: 1px;
+    border: 0; border-top: 1px solid #75ab8d;
+    margin: 1em 0; padding: 0;
+}
+
+
+.AboutRow {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+}
+
+
+#aboutPic {
+  max-width: 350px;
+  margin: 0.857142857rem 1.714285714rem 0.857142857rem 0;
+  float: left;
+}
+
+
+/* .h3 {
+  animation: type 2s steps(92);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 4px solid black;
+  width: 92ch;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 92ch;
+  }
+
+} */
+
+
+}
