@@ -646,10 +646,17 @@ h1 {
 }
 
 
+.CVRowTop {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
 .CVRow {
   display: grid;
   grid-template-columns: 3fr 9fr;
 }
+
+
 
 
 /* #### About content */
