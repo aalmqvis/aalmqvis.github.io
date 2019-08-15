@@ -307,6 +307,10 @@ em {
 
 }
 
+#tile1PageMap {
+  max-width: 1100px;
+}
+
 #tile1PageScream {
   max-width: 1100px;
 }
